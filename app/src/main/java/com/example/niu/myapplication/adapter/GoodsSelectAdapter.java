@@ -1,0 +1,146 @@
+package com.example.niu.myapplication.adapter;
+
+import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.example.niu.myapplication.R;
+import com.example.niu.myapplication.bean.goodsBean;
+import com.example.niu.myapplication.utils.DecimalFormatUtils;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+
+import java.util.ArrayList;
+
+import static android.support.constraint.Constraints.TAG;
+
+/**
+ * Created by wanglei on 18-5-19.
+ */
+
+public class GoodsSelectAdapter extends RecyclerView.Adapter<GoodsSelectAdapter.GoodsSelectViewHolder> {
+
+    private ArrayList<goodsBean>goodsBeanArrayList;
+
+    private onItemClick onItemClick;
+    private Context mContext;
+    public GoodsSelectAdapter(Context context,ArrayList<goodsBean> goodsBeanArrayList) {
+        this.goodsBeanArrayList = goodsBeanArrayList;
+        mContext = context;
+    }
+
+    public void setOnItemClick(onItemClick onItemClick){
+
+        this.onItemClick = onItemClick;
+    }
+    @NonNull
+    @Override
+    public GoodsSelectViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+        View view = LayoutInflater.from(mContext)
+                .inflate(R.layout.recycler_item_seleceted_goods,parent,false);
+        return new GoodsSelectViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull final GoodsSelectViewHolder holder, final int position) {
+
+
+      //  ImageLoader.getInstance() .init(ImageLoaderConfiguration.createDefault(mContext));
+//
+        //ImageLoader.getInstance().displayImage
+        // (goodsBeanArrayList.get(position).getGoodsimg(), holder.tv_goods_img);
+
+        Log.d(TAG, "onBindViewHolder: "+goodsBeanArrayList.get(position)
+        .getLocal_image());
+        Glide.with(mContext)
+                .load(goodsBeanArrayList.get(position).getLocal_image())
+                .asBitmap()
+                .into(holder.tv_goods_img);
+        holder.tv_goods_name.setText(goodsBeanArrayList.get(position)
+        .getGoodsName());
+        holder.tv_goods_number.setText("x"+goodsBeanArrayList.get(position)
+                .getNumber()+"");
+        holder.tv_goods_per_price.setText(DecimalFormatUtils.doubleToMoney(goodsBeanArrayList.get(position)
+                .getPrice()));
+       holder.tv_goods_total_price.setText(DecimalFormatUtils.doubleToMoney(goodsBeanArrayList.get(position)
+                .getPrice()*goodsBeanArrayList.get(position).getNumber()));
+
+
+       if (onItemClick!=null){
+
+
+           holder.itemView.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   
+                   
+                   
+                   
+                   Log.d(TAG, "onClick: v= "+v);
+
+
+                       onItemClick.onItemClick(v,position);
+
+               }
+           });
+           holder.tv_goods_delete.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+
+                   onItemClick.onDelete(v,position);
+
+               }
+           });
+
+
+        }
+
+
+    }
+
+    public void updateData(ArrayList<goodsBean>goodsBeanArrayList){
+
+        this.goodsBeanArrayList = goodsBeanArrayList;
+
+
+        notifyDataSetChanged();
+
+    }
+    @Override
+    public int getItemCount() {
+        return goodsBeanArrayList.size();
+    }
+
+    public class GoodsSelectViewHolder extends RecyclerView.ViewHolder{
+
+        private ImageView tv_goods_img;
+        private TextView tv_goods_name;
+        private TextView tv_goods_number;
+        private TextView tv_goods_per_price;
+        private TextView tv_goods_total_price;
+        private TextView tv_goods_delete;
+        public GoodsSelectViewHolder(View itemView) {
+            super(itemView);
+            tv_goods_img = (ImageView) itemView.findViewById(R.id.tv_goods_img);
+            tv_goods_name = (TextView) itemView.findViewById(R.id.tv_goods_name);
+                tv_goods_number = (TextView)itemView.findViewById(R.id.tv_goods_number);
+            tv_goods_per_price = (TextView)itemView.findViewById(R.id.tv_goods_per_price);
+            tv_goods_total_price = (TextView)itemView.findViewById(R.id.tv_goods_total_price);
+            tv_goods_delete = (TextView)itemView.findViewById(R.id.tv_goods_delete);
+
+        }
+    }
+    public interface onItemClick{
+         void onItemClick(View view,int position);
+
+         void onDelete(View view,int position);
+    }
+}

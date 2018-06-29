@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:gravity="center_horizontal"
+    >
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:id="@+id/iv_sqm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/saomaqiang"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用扫码枪扫描客户付款码"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:text="取消收款"
+        android:textSize="16sp"
+        android:textColor="#609ee9"
+        android:background="@drawable/shape_bt_bg"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="qimai_xls" />
+    <version value="1" />
+
+    <list>
+        <mapping class="com.example.niu.myapplication.bean.goodsBean" />
+    </list>
+   <!-- <list>
+        <mapping class="com.example.niu.myapplication.bean" />
+    </list>-->
+</litepal>

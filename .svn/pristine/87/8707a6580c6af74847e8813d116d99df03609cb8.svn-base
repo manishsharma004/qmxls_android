@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="550dp"
+        android:layout_height="435dp"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/shape_input_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应收金额: "
+                    android:textSize="18sp"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_actual_money"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textSize="18sp"
+                    android:textColor="#1E90FF"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+
+                android:visibility="visible"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实收金额: "
+                    android:textSize="18sp"
+                    android:textColor="#000"
+
+                    />
+                <TextView
+                    android:id="@+id/tv_client_pay"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:text="找零: "
+                />
+
+
+            <TextView
+                android:id="@+id/tv_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="#FF0000"
+                android:textSize="18sp"
+                />
+
+
+        </LinearLayout>
+
+
+        <include layout="@layout/key_bord"
+                android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+    </LinearLayout>
+<!--<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="10dp"
+    android:textSize="28sp"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:text="取消收款"
+    android:layout_gravity="center"
+    />-->
+
+    <TextView
+
+        android:id="@+id/tv_cancel"
+        android:text="取消收款"
+        android:textSize="18sp"
+        android:textColor="#609ee9"
+        android:background="@drawable/shape_bt_bg"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        />
+
+</LinearLayout>

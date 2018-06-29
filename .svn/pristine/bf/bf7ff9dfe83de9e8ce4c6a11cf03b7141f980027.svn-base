@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.sunmi:DS_Lib-1.0.11">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/DS_Lib-1.0.11.aar/fef3acc0460a46578101dc2b58931e77/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/DS_Lib-1.0.11.aar/fef3acc0460a46578101dc2b58931e77/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sunmi/DS_Lib/1.0.11/97eeff0a59b8cc8781d32ccf60b9a660f7a74097/DS_Lib-1.0.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

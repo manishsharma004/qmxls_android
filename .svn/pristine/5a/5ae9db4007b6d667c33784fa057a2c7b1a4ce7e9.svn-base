@@ -1,0 +1,74 @@
+// Generated code from Butter Knife. Do not modify!
+package com.example.niu.myapplication.activity;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.example.niu.myapplication.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class ChangePwdActivity_ViewBinding implements Unbinder {
+  private ChangePwdActivity target;
+
+  private View view2131296308;
+
+  private View view2131296306;
+
+  @UiThread
+  public ChangePwdActivity_ViewBinding(ChangePwdActivity target) {
+    this(target, target.getWindow().getDecorView());
+  }
+
+  @UiThread
+  public ChangePwdActivity_ViewBinding(final ChangePwdActivity target, View source) {
+    this.target = target;
+
+    View view;
+    target.etChangeMobile = Utils.findRequiredViewAsType(source, R.id.et_change_mobile, "field 'etChangeMobile'", EditText.class);
+    target.etChangeYzm = Utils.findRequiredViewAsType(source, R.id.et_change_yzm, "field 'etChangeYzm'", EditText.class);
+    target.etChangePwd = Utils.findRequiredViewAsType(source, R.id.et_change_pwd, "field 'etChangePwd'", EditText.class);
+    view = Utils.findRequiredView(source, R.id.bt_get_yzm, "field 'btChangeYzm' and method 'onViewClicked'");
+    target.btChangeYzm = Utils.castView(view, R.id.bt_get_yzm, "field 'btChangeYzm'", Button.class);
+    view2131296308 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.bt_change_pwd, "field 'btChangePwd' and method 'onViewClicked'");
+    target.btChangePwd = Utils.castView(view, R.id.bt_change_pwd, "field 'btChangePwd'", Button.class);
+    view2131296306 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    ChangePwdActivity target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.etChangeMobile = null;
+    target.etChangeYzm = null;
+    target.etChangePwd = null;
+    target.btChangeYzm = null;
+    target.btChangePwd = null;
+
+    view2131296308.setOnClickListener(null);
+    view2131296308 = null;
+    view2131296306.setOnClickListener(null);
+    view2131296306 = null;
+  }
+}

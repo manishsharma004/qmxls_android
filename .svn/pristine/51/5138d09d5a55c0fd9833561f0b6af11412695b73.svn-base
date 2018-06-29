@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="60dp"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_client"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:layout_width="500dp"
+        android:orientation="vertical"
+        android:layout_height="450dp">
+
+        <TextView
+
+            android:background="@drawable/shape_gray_bg"
+            android:id="@+id/tv_vip_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:text="请输入会员手机号，会员号查询"
+            />
+
+        
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                    android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:text="1"
+                    style="@style/KeyBoradItem"
+                    />
+                <TextView
+                    android:text="4"
+                    style="@style/KeyBoradItem"
+                     />
+                <TextView
+                    android:text="7"
+                    style="@style/KeyBoradItem" />
+
+                <TextView
+                    android:text="00"
+                    style="@style/KeyBoradItem" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="2"
+                    style="@style/KeyBoradItem" />
+                <TextView
+                    android:text="5"
+                    style="@style/KeyBoradItem"/>
+                <TextView
+                    android:text="8"
+                    style="@style/KeyBoradItem" />
+
+                <TextView
+                    android:text="0"
+                    style="@style/KeyBoradItem" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="3"
+                    style="@style/KeyBoradItem" />
+                <TextView
+                    android:text="6"
+                    style="@style/KeyBoradItem" />
+                <TextView
+                    android:text="9"
+                    style="@style/KeyBoradItem" />
+
+                <TextView
+                    android:text="."
+                    style="@style/KeyBoradItem" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="清空"
+                    style="@style/KeyBoradItem"/>
+                <TextView
+                    android:text="删除"
+                    style="@style/KeyBoradItem" />
+                <TextView
+                    android:background="@drawable/shape_keyborditem"
+                    android:text="确认"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>-->
+        <include
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            layout="@layout/key_bord"/>
+        
+        
+        
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,300 @@
+// Generated code from Butter Knife. Do not modify!
+package com.example.niu.myapplication.fragment.right;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.view.View;
+import android.widget.TextView;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.example.niu.myapplication.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class CrashFragment_ViewBinding implements Unbinder {
+  private CrashFragment target;
+
+  private View view2131296518;
+
+  private View view2131296532;
+
+  private View view2131296526;
+
+  private View view2131296550;
+
+  private View view2131296553;
+
+  private View view2131296556;
+
+  private View view2131296549;
+
+  private View view2131296551;
+
+  private View view2131296554;
+
+  private View view2131296557;
+
+  private View view2131296548;
+
+  private View view2131296552;
+
+  private View view2131296555;
+
+  private View view2131296558;
+
+  private View view2131296561;
+
+  private View view2131296559;
+
+  private View view2131296560;
+
+  private View view2131296562;
+
+  private View view2131296522;
+
+  @UiThread
+  public CrashFragment_ViewBinding(final CrashFragment target, View source) {
+    this.target = target;
+
+    View view;
+    view = Utils.findRequiredView(source, R.id.tv_actual_money, "field 'tvActualMoney' and method 'onViewClicked'");
+    target.tvActualMoney = Utils.castView(view, R.id.tv_actual_money, "field 'tvActualMoney'", TextView.class);
+    view2131296518 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_client_pay, "field 'tvClientPay' and method 'onViewClicked'");
+    target.tvClientPay = Utils.castView(view, R.id.tv_client_pay, "field 'tvClientPay'", TextView.class);
+    view2131296532 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_charge, "field 'tvCharge' and method 'onViewClicked'");
+    target.tvCharge = Utils.castView(view, R.id.tv_charge, "field 'tvCharge'", TextView.class);
+    view2131296526 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_1, "field 'tvKey1' and method 'onViewClicked'");
+    target.tvKey1 = Utils.castView(view, R.id.tv_key_1, "field 'tvKey1'", TextView.class);
+    view2131296550 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_4, "field 'tvKey4' and method 'onViewClicked'");
+    target.tvKey4 = Utils.castView(view, R.id.tv_key_4, "field 'tvKey4'", TextView.class);
+    view2131296553 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_7, "field 'tvKey7' and method 'onViewClicked'");
+    target.tvKey7 = Utils.castView(view, R.id.tv_key_7, "field 'tvKey7'", TextView.class);
+    view2131296556 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_00, "field 'tvKey00' and method 'onViewClicked'");
+    target.tvKey00 = Utils.castView(view, R.id.tv_key_00, "field 'tvKey00'", TextView.class);
+    view2131296549 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_2, "field 'tvKey2' and method 'onViewClicked'");
+    target.tvKey2 = Utils.castView(view, R.id.tv_key_2, "field 'tvKey2'", TextView.class);
+    view2131296551 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_5, "field 'tvKey5' and method 'onViewClicked'");
+    target.tvKey5 = Utils.castView(view, R.id.tv_key_5, "field 'tvKey5'", TextView.class);
+    view2131296554 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_8, "field 'tvKey8' and method 'onViewClicked'");
+    target.tvKey8 = Utils.castView(view, R.id.tv_key_8, "field 'tvKey8'", TextView.class);
+    view2131296557 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_0, "field 'tvKey0' and method 'onViewClicked'");
+    target.tvKey0 = Utils.castView(view, R.id.tv_key_0, "field 'tvKey0'", TextView.class);
+    view2131296548 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_3, "field 'tvKey3' and method 'onViewClicked'");
+    target.tvKey3 = Utils.castView(view, R.id.tv_key_3, "field 'tvKey3'", TextView.class);
+    view2131296552 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_6, "field 'tvKey6' and method 'onViewClicked'");
+    target.tvKey6 = Utils.castView(view, R.id.tv_key_6, "field 'tvKey6'", TextView.class);
+    view2131296555 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_9, "field 'tvKey9' and method 'onViewClicked'");
+    target.tvKey9 = Utils.castView(view, R.id.tv_key_9, "field 'tvKey9'", TextView.class);
+    view2131296558 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_point, "field 'tvKeyPoint' and method 'onViewClicked'");
+    target.tvKeyPoint = Utils.castView(view, R.id.tv_key_point, "field 'tvKeyPoint'", TextView.class);
+    view2131296561 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_clear, "field 'tvKeyClear' and method 'onViewClicked'");
+    target.tvKeyClear = Utils.castView(view, R.id.tv_key_clear, "field 'tvKeyClear'", TextView.class);
+    view2131296559 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_del, "field 'tvKeyDel' and method 'onViewClicked'");
+    target.tvKeyDel = Utils.castView(view, R.id.tv_key_del, "field 'tvKeyDel'", TextView.class);
+    view2131296560 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_key_sure, "field 'tvKeySure' and method 'onViewClicked'");
+    target.tvKeySure = Utils.castView(view, R.id.tv_key_sure, "field 'tvKeySure'", TextView.class);
+    view2131296562 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_cancel, "field 'tvCancel' and method 'onViewClicked'");
+    target.tvCancel = Utils.castView(view, R.id.tv_cancel, "field 'tvCancel'", TextView.class);
+    view2131296522 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    CrashFragment target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.tvActualMoney = null;
+    target.tvClientPay = null;
+    target.tvCharge = null;
+    target.tvKey1 = null;
+    target.tvKey4 = null;
+    target.tvKey7 = null;
+    target.tvKey00 = null;
+    target.tvKey2 = null;
+    target.tvKey5 = null;
+    target.tvKey8 = null;
+    target.tvKey0 = null;
+    target.tvKey3 = null;
+    target.tvKey6 = null;
+    target.tvKey9 = null;
+    target.tvKeyPoint = null;
+    target.tvKeyClear = null;
+    target.tvKeyDel = null;
+    target.tvKeySure = null;
+    target.tvCancel = null;
+
+    view2131296518.setOnClickListener(null);
+    view2131296518 = null;
+    view2131296532.setOnClickListener(null);
+    view2131296532 = null;
+    view2131296526.setOnClickListener(null);
+    view2131296526 = null;
+    view2131296550.setOnClickListener(null);
+    view2131296550 = null;
+    view2131296553.setOnClickListener(null);
+    view2131296553 = null;
+    view2131296556.setOnClickListener(null);
+    view2131296556 = null;
+    view2131296549.setOnClickListener(null);
+    view2131296549 = null;
+    view2131296551.setOnClickListener(null);
+    view2131296551 = null;
+    view2131296554.setOnClickListener(null);
+    view2131296554 = null;
+    view2131296557.setOnClickListener(null);
+    view2131296557 = null;
+    view2131296548.setOnClickListener(null);
+    view2131296548 = null;
+    view2131296552.setOnClickListener(null);
+    view2131296552 = null;
+    view2131296555.setOnClickListener(null);
+    view2131296555 = null;
+    view2131296558.setOnClickListener(null);
+    view2131296558 = null;
+    view2131296561.setOnClickListener(null);
+    view2131296561 = null;
+    view2131296559.setOnClickListener(null);
+    view2131296559 = null;
+    view2131296560.setOnClickListener(null);
+    view2131296560 = null;
+    view2131296562.setOnClickListener(null);
+    view2131296562 = null;
+    view2131296522.setOnClickListener(null);
+    view2131296522 = null;
+  }
+}

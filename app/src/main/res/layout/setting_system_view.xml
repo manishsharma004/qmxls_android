@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="系统设置"
+        android:textColor="#000"
+        android:textSize="18sp"
+
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginBottom="30dp"
+        />
+
+    <include layout="@layout/item_sperator"
+
+        />
+
+<LinearLayout
+android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+
+        android:text="店铺名称: "
+        />
+    
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:id="@+id/store_name"
+        android:text="企迈零售"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="right"
+    android:layout_marginRight="20dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="切换店铺"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/change_store"
+        android:textColor="#609ee9"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+
+        android:layout_marginLeft="20dp"
+        android:layout_width="32dp"
+        android:src="@drawable/ic_action_right"
+        android:layout_height="32dp" />
+</LinearLayout>
+</LinearLayout>
+    <include layout="@layout/item_sperator"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="联系客户: "
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="400-10012345"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_marginRight="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/item_sperator"/>
+
+    <TextView
+        android:id="@+id/tv_exit"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:paddingLeft="80dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="80dp"
+        android:layout_height="wrap_content"
+
+        android:background="#609ee9"
+        android:textColor="#fff"
+        android:text="退出"
+        />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tl_choose_stores"
+        android:layout_width="match_parent"
+        app:title="返回登录"
+        app:navigationIcon="@drawable/ic_action_back"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+<include layout="@layout/item_sperator"/>
+
+<LinearLayout
+    android:layout_marginTop="20dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tl_choose_stores"
+    android:layout_width="800dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="选择店铺"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:scrollbars="none"-->
+    <!--android:fillViewport="true"-->
+    <!--android:layout_height="match_parent">-->
+    <!---->
+    <!---->
+        <!--<com.example.niu.myapplication.utils.MoreListView-->
+            <!--android:id="@+id/listview_morelist"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:dividerHeight="20dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@null"-->
+            <!--android:divider="@null"/>-->
+
+<!--</ScrollView>-->
+
+
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

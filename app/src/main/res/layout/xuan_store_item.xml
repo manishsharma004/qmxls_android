@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:layout_marginRight="20dp"
+    android:layout_margin="20dp"
+    android:background="@drawable/shape_recycle_store"
+    android:layout_height="120dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            android:text="企迈零售官方"
+            android:layout_gravity="start|center"
+            android:textSize="20sp"
+            android:textColor="@color/TvBlack"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_store_type"
+            android:text="门店"
+            android:layout_gravity="start|center"
+            android:textSize="16sp"
+            android:background="@drawable/selector_blue"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:text="店铺状态："
+                android:layout_gravity="start|center"
+                android:textSize="16sp"
+                android:textColor="@color/TvGray"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="营业中"
+                android:id="@+id/store_status"
+                android:textSize="16sp"
+                android:textColor="@color/TvGray"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_margin="15dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_store_icon"
+            android:layout_width="60dp"
+            android:src="@drawable/deskbook"
+            android:layout_marginLeft="30dp"
+            android:layout_height="60dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

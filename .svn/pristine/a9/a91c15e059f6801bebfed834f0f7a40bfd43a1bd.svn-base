@@ -1,0 +1,125 @@
+// Generated code from Butter Knife. Do not modify!
+package com.example.niu.myapplication.fragment.right;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.example.niu.myapplication.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class ClientInfoFragment_ViewBinding implements Unbinder {
+  private ClientInfoFragment target;
+
+  private View view2131296307;
+
+  private View view2131296528;
+
+  private View view2131296529;
+
+  private View view2131296404;
+
+  private View view2131296396;
+
+  @UiThread
+  public ClientInfoFragment_ViewBinding(final ClientInfoFragment target, View source) {
+    this.target = target;
+
+    View view;
+    target.tvClientName = Utils.findRequiredViewAsType(source, R.id.tv_client_name, "field 'tvClientName'", TextView.class);
+    target.lvYouhuiquan = Utils.findRequiredViewAsType(source, R.id.lv_youhuiquan, "field 'lvYouhuiquan'", LinearLayout.class);
+    target.lvVip = Utils.findRequiredViewAsType(source, R.id.lv_vip, "field 'lvVip'", LinearLayout.class);
+    target.tvClientMobile = Utils.findRequiredViewAsType(source, R.id.tv_client_mobile, "field 'tvClientMobile'", TextView.class);
+    view = Utils.findRequiredView(source, R.id.bt_client_change, "field 'btClientChange' and method 'onViewClicked'");
+    target.btClientChange = Utils.castView(view, R.id.bt_client_change, "field 'btClientChange'", TextView.class);
+    view2131296307 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_client_consume_numbe, "field 'tvClientConsumeNumbe' and method 'onViewClicked'");
+    target.tvClientConsumeNumbe = Utils.castView(view, R.id.tv_client_consume_numbe, "field 'tvClientConsumeNumbe'", TextView.class);
+    view2131296528 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_client_last_consume_time, "field 'tvClientLastConsumeTime' and method 'onViewClicked'");
+    target.tvClientLastConsumeTime = Utils.castView(view, R.id.tv_client_last_consume_time, "field 'tvClientLastConsumeTime'", TextView.class);
+    view2131296529 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ll_vip_card, "field 'llVipCard' and method 'onViewClicked'");
+    target.llVipCard = Utils.castView(view, R.id.ll_vip_card, "field 'llVipCard'", RelativeLayout.class);
+    view2131296404 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ll_coupons, "field 'llCoupons' and method 'onViewClicked'");
+    target.llCoupons = Utils.castView(view, R.id.ll_coupons, "field 'llCoupons'", LinearLayout.class);
+    view2131296396 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    target.tvVipStyle = Utils.findRequiredViewAsType(source, R.id.tv_vip_style, "field 'tvVipStyle'", TextView.class);
+    target.tvValidityPeriod = Utils.findRequiredViewAsType(source, R.id.tv_validity_period, "field 'tvValidityPeriod'", TextView.class);
+    target.tvDiscount = Utils.findRequiredViewAsType(source, R.id.tv_discount, "field 'tvDiscount'", TextView.class);
+    target.tvVipName = Utils.findRequiredViewAsType(source, R.id.tv_vip_name, "field 'tvVipName'", TextView.class);
+    target.rvCoupons = Utils.findRequiredViewAsType(source, R.id.rv_coupons, "field 'rvCoupons'", RecyclerView.class);
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    ClientInfoFragment target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.tvClientName = null;
+    target.lvYouhuiquan = null;
+    target.lvVip = null;
+    target.tvClientMobile = null;
+    target.btClientChange = null;
+    target.tvClientConsumeNumbe = null;
+    target.tvClientLastConsumeTime = null;
+    target.llVipCard = null;
+    target.llCoupons = null;
+    target.tvVipStyle = null;
+    target.tvValidityPeriod = null;
+    target.tvDiscount = null;
+    target.tvVipName = null;
+    target.rvCoupons = null;
+
+    view2131296307.setOnClickListener(null);
+    view2131296307 = null;
+    view2131296528.setOnClickListener(null);
+    view2131296528 = null;
+    view2131296529.setOnClickListener(null);
+    view2131296529 = null;
+    view2131296404.setOnClickListener(null);
+    view2131296404 = null;
+    view2131296396.setOnClickListener(null);
+    view2131296396 = null;
+  }
+}

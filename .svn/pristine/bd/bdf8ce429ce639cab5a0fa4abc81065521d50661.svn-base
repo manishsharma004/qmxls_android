@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\APP\\Qmxls\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\library-1.0.7.aar\\30d2ae2d1a174bd5b1857b308787d7df\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,107,158,207,280,397,465,522,571,628,681,730,782",
+                        "endColumns": "51,50,48,72,116,67,56,48,56,52,48,51,52",
+                        "endOffsets": "102,153,202,275,392,460,517,566,623,676,725,777,830"
+                    }
+                }
+            ]
+        }
+    ]
+}

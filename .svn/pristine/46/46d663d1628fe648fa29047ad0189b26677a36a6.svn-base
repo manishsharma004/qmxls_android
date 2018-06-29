@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/ll_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_guadan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_bt_bg"
+            android:text="挂单"
+           />
+
+        <FrameLayout
+
+            android:layout_width="145dp"
+            android:layout_height="100dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_qudan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+
+                android:paddingBottom="10dp"
+                android:textSize="18sp"
+                android:background="@drawable/shape_bt_bg"
+                android:text="取单"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_qudan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:background="@drawable/shape_corner_red"
+                android:layout_gravity="right"
+                android:layout_marginTop="27dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginRight="12dp"
+
+
+
+
+
+                />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_bottom_menu"
+        android:orientation="vertical"
+        >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_goods_client"
+            android:layout_width="290dp"
+            android:layout_height="65dp"
+            app:tabGravity="fill"
+            app:tabTextAppearance="@style/TabLayoutTextSize"
+            app:tabIndicatorColor="@color/TvBlue"
+            app:tabSelectedTextColor="@color/TvBlue">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ti_goods"
+                android:layout_gravity="left"
+                android:text="商品" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/ti_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户" />
+        </android.support.design.widget.TabLayout>
+   <View
+       android:layout_alignBottom="@id/tl_goods_client"
+       android:layout_width="match_parent"
+       android:layout_height="0.5dp"
+       android:background="#cccccc"
+       />
+        <android.support.v4.view.ViewPager
+            android:layout_below="@id/tl_goods_client"
+            android:id="@+id/vp_goods_client"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

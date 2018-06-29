@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="228dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+     android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="70dp"
+    android:background="@drawable/goods_item_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ImageView
+    android:id="@+id/tv_goods_pic"
+    android:layout_width="48dp"
+    android:src="@drawable/default_user"
+    android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="企迈小店"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:maxEms="5"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintLeft_toRightOf="@id/tv_goods_pic" />
+
+    <TextView
+        android:id="@+id/tv_goods_price"
+        android:text="2.00/件"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_goods_pic"
+        app:layout_constraintTop_toBottomOf="@id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

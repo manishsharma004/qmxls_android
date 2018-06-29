@@ -1,0 +1,15 @@
+package com.example.niu.myapplication.ui;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.example.niu.myapplication.R;
+
+public class UserDisplayActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_user_display);
+    }
+}

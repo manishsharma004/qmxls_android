@@ -1,0 +1,143 @@
+package com.example.niu.myapplication.fragment;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.example.niu.myapplication.App;
+import com.example.niu.myapplication.BaseFragment;
+import com.example.niu.myapplication.R;
+import com.example.niu.myapplication.activity.ChooseStoreActivity;
+import com.example.niu.myapplication.utils.Hint;
+import com.example.niu.myapplication.utils.Xutils;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
+
+/**
+ * 搜索会员
+ * Created by NIU on 2018/5/18.
+ */
+
+public class Right_client_fragment extends BaseFragment {
+    @BindView(R.id.tv_vip_id)
+    TextView tvVipId;
+    @BindView(R.id.tv_key_1)
+    TextView tvKey1;
+    @BindView(R.id.tv_key_4)
+    TextView tvKey4;
+    @BindView(R.id.tv_key_7)
+    TextView tvKey7;
+    @BindView(R.id.tv_key_00)
+    TextView tvKey00;
+    @BindView(R.id.tv_key_2)
+    TextView tvKey2;
+    @BindView(R.id.tv_key_5)
+    TextView tvKey5;
+    @BindView(R.id.tv_key_8)
+    TextView tvKey8;
+    @BindView(R.id.tv_key_0)
+    TextView tvKey0;
+    @BindView(R.id.tv_key_3)
+    TextView tvKey3;
+    @BindView(R.id.tv_key_6)
+    TextView tvKey6;
+    @BindView(R.id.tv_key_9)
+    TextView tvKey9;
+    @BindView(R.id.tv_key_point)
+    TextView tvKeyPoint;
+    @BindView(R.id.tv_key_clear)
+    TextView tvKeyClear;
+    @BindView(R.id.tv_key_del)
+    TextView tvKeyDel;
+    @BindView(R.id.tv_key_sure)
+    TextView tvKeySure;
+    Unbinder unbinder;
+
+    StringBuilder userId = new StringBuilder();
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    protected void initView(View rootView) {
+
+
+    }
+
+    @Override
+    protected int getLayout() {
+        return R.layout.cashier_right_item_client;
+    }
+
+
+
+    @OnClick({R.id.tv_vip_id, R.id.tv_key_1, R.id.tv_key_4, R.id.tv_key_7, R.id.tv_key_00, R.id.tv_key_2, R.id.tv_key_5, R.id.tv_key_8, R.id.tv_key_0, R.id.tv_key_3, R.id.tv_key_6, R.id.tv_key_9, R.id.tv_key_point, R.id.tv_key_clear, R.id.tv_key_del, R.id.tv_key_sure})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.tv_vip_id:
+                break;
+            case R.id.tv_key_1:
+
+            case R.id.tv_key_4:
+
+            case R.id.tv_key_7:
+
+            case R.id.tv_key_2:
+
+            case R.id.tv_key_5:
+
+            case R.id.tv_key_8:
+
+            case R.id.tv_key_0:
+
+            case R.id.tv_key_3:
+
+            case R.id.tv_key_6:
+
+            case R.id.tv_key_9:
+
+                TextView tempView = (TextView) rootView.findViewById(view.getId());
+
+                userId.append(tempView.getText().toString());
+
+                break;
+            case R.id.tv_key_clear:
+
+               userId = new StringBuilder();
+
+
+                break;
+            case R.id.tv_key_del:
+
+                if (userId.length()>0){
+
+                    userId.delete(userId.length()-1,userId.length());
+
+                }
+                break;
+            case R.id.tv_key_sure:
+                Hint.Short(getActivity(),userId.toString());
+                break;
+        }
+        if (userId.length()>0) {
+            tvVipId.setText(userId.toString());
+        }else{
+
+            tvVipId.setText("");
+        }
+    }
+
+}

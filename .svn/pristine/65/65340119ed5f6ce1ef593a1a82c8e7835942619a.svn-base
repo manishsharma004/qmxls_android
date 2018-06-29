@@ -1,0 +1,194 @@
+// Generated code from Butter Knife. Do not modify!
+package com.example.niu.myapplication.fragment.left;
+
+import android.support.annotation.CallSuper;
+import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
+import butterknife.internal.Utils;
+import com.example.niu.myapplication.R;
+import java.lang.IllegalStateException;
+import java.lang.Override;
+
+public class Left_crashier_fragment_ViewBinding implements Unbinder {
+  private Left_crashier_fragment target;
+
+  private View view2131296443;
+
+  private View view2131296380;
+
+  private View view2131296403;
+
+  private View view2131296580;
+
+  private View view2131296579;
+
+  private View view2131296519;
+
+  private View view2131296520;
+
+  private View view2131296394;
+
+  private View view2131296399;
+
+  private View view2131296440;
+
+  private View view2131296400;
+
+  @UiThread
+  public Left_crashier_fragment_ViewBinding(final Left_crashier_fragment target, View source) {
+    this.target = target;
+
+    View view;
+    view = Utils.findRequiredView(source, R.id.rv_select_goods, "field 'rvSelectedGoods' and method 'onViewClicked'");
+    target.rvSelectedGoods = Utils.castView(view, R.id.rv_select_goods, "field 'rvSelectedGoods'", RecyclerView.class);
+    view2131296443 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.iv_menu, "field 'ivMenu' and method 'onViewClicked1'");
+    target.ivMenu = Utils.castView(view, R.id.iv_menu, "field 'ivMenu'", ImageView.class);
+    view2131296380 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked1(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ll_top, "field 'llTop' and method 'onViewClicked'");
+    target.llTop = Utils.castView(view, R.id.ll_top, "field 'llTop'", RelativeLayout.class);
+    view2131296403 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_total_money, "field 'tvTotalMoney' and method 'onViewClicked'");
+    target.tvTotalMoney = Utils.castView(view, R.id.tv_total_money, "field 'tvTotalMoney'", TextView.class);
+    view2131296580 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_total_discount, "field 'tvTotalDiscount' and method 'onViewClicked'");
+    target.tvTotalDiscount = Utils.castView(view, R.id.tv_total_discount, "field 'tvTotalDiscount'", TextView.class);
+    view2131296579 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_all_cancel, "field 'tvAllCancel' and method 'onViewClicked'");
+    target.tvAllCancel = Utils.castView(view, R.id.tv_all_cancel, "field 'tvAllCancel'", TextView.class);
+    view2131296519 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.tv_all_collection, "field 'tvAllCollection' and method 'onViewClicked1'");
+    target.tvAllCollection = Utils.castView(view, R.id.tv_all_collection, "field 'tvAllCollection'", TextView.class);
+    view2131296520 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked1(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ll_bottom_menu, "field 'llBottomMenu' and method 'onViewClicked'");
+    target.llBottomMenu = Utils.castView(view, R.id.ll_bottom_menu, "field 'llBottomMenu'", LinearLayout.class);
+    view2131296394 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.ll_empty_goods, "field 'llEmptyGoods' and method 'onViewClicked'");
+    target.llEmptyGoods = Utils.castView(view, R.id.ll_empty_goods, "field 'llEmptyGoods'", LinearLayout.class);
+    view2131296399 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.rl_youhuiquan, "field 'rlYouhuiquan' and method 'onViewClicked1'");
+    target.rlYouhuiquan = Utils.castView(view, R.id.rl_youhuiquan, "field 'rlYouhuiquan'", RelativeLayout.class);
+    view2131296440 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked1(p0);
+      }
+    });
+    target.youhuimoney = Utils.findRequiredViewAsType(source, R.id.youhuimoney, "field 'youhuimoney'", TextView.class);
+    view = Utils.findRequiredView(source, R.id.ll_goods_items, "field 'llGoodsItems' and method 'onViewClicked'");
+    target.llGoodsItems = Utils.castView(view, R.id.ll_goods_items, "field 'llGoodsItems'", RelativeLayout.class);
+    view2131296400 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onViewClicked(p0);
+      }
+    });
+  }
+
+  @Override
+  @CallSuper
+  public void unbind() {
+    Left_crashier_fragment target = this.target;
+    if (target == null) throw new IllegalStateException("Bindings already cleared.");
+    this.target = null;
+
+    target.rvSelectedGoods = null;
+    target.ivMenu = null;
+    target.llTop = null;
+    target.tvTotalMoney = null;
+    target.tvTotalDiscount = null;
+    target.tvAllCancel = null;
+    target.tvAllCollection = null;
+    target.llBottomMenu = null;
+    target.llEmptyGoods = null;
+    target.rlYouhuiquan = null;
+    target.youhuimoney = null;
+    target.llGoodsItems = null;
+
+    view2131296443.setOnClickListener(null);
+    view2131296443 = null;
+    view2131296380.setOnClickListener(null);
+    view2131296380 = null;
+    view2131296403.setOnClickListener(null);
+    view2131296403 = null;
+    view2131296580.setOnClickListener(null);
+    view2131296580 = null;
+    view2131296579.setOnClickListener(null);
+    view2131296579 = null;
+    view2131296519.setOnClickListener(null);
+    view2131296519 = null;
+    view2131296520.setOnClickListener(null);
+    view2131296520 = null;
+    view2131296394.setOnClickListener(null);
+    view2131296394 = null;
+    view2131296399.setOnClickListener(null);
+    view2131296399 = null;
+    view2131296440.setOnClickListener(null);
+    view2131296440 = null;
+    view2131296400.setOnClickListener(null);
+    view2131296400 = null;
+  }
+}

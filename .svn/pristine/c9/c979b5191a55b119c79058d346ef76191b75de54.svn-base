@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.example.niu.myapplication.view.CustomDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dl_main"
+    >
+
+<LinearLayout
+
+    android:id="@+id/ll_main"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/fl_left_container"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+    <!--<fragment
+        android:id="@+id/left_crashier_fragment"
+        android:nacom.example.niu.myapplication.fragment.left.Left_crashier_fragmentment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />-->
+
+ <View
+     android:layout_width="20dp"
+     android:layout_height="match_parent"
+     android:background="#F0F0F0"/>
+
+    <!--<fragment
+        android:id="@+id/right_crashier_fragment"
+        android:nacom.example.niu.myapplication.fragment.right.Right_crashier_fragmentment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>-->
+
+    <FrameLayout
+        android:id="@+id/right_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+
+</LinearLayout>
+
+    <fragment
+        android:id="@+id/slide_fragment"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:name="com.example.niu.myapplication.fragment.SlideFragment"
+        />
+
+</com.example.niu.myapplication.view.CustomDrawerLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/tv_key_1"
+                android:text="1"
+                style="@style/KeyBoradItem"
+                />
+            <TextView
+                android:id="@+id/tv_key_4"
+
+                android:text="4"
+                style="@style/KeyBoradItem"
+                />
+            <TextView
+                android:id="@+id/tv_key_7"
+
+                android:text="7"
+                style="@style/KeyBoradItem" />
+
+            <TextView
+                android:id="@+id/tv_key_00"
+
+                android:text="00"
+                style="@style/KeyBoradItem" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_key_2"
+
+                android:text="2"
+                style="@style/KeyBoradItem" />
+            <TextView
+                android:id="@+id/tv_key_5"
+
+                android:text="5"
+                style="@style/KeyBoradItem"/>
+            <TextView
+                android:id="@+id/tv_key_8"
+
+                android:text="8"
+                style="@style/KeyBoradItem" />
+
+            <TextView
+                android:id="@+id/tv_key_0"
+
+                android:text="0"
+                style="@style/KeyBoradItem" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_key_3"
+
+                android:text="3"
+                style="@style/KeyBoradItem" />
+            <TextView
+                android:id="@+id/tv_key_6"
+
+                android:text="6"
+                style="@style/KeyBoradItem" />
+            <TextView
+                android:id="@+id/tv_key_9"
+
+                android:text="9"
+                style="@style/KeyBoradItem" />
+
+            <TextView
+                android:id="@+id/tv_key_point"
+
+                android:text="."
+                style="@style/KeyBoradItem" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_key_clear"
+
+                android:text="清空"
+                style="@style/KeyBoradItem"/>
+            <TextView
+                android:id="@+id/tv_key_del"
+
+                android:text="删除"
+                style="@style/KeyBoradItem" />
+            <TextView
+                android:id="@+id/tv_key_sure"
+                android:background="#609ee9"
+                android:text="确定"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>

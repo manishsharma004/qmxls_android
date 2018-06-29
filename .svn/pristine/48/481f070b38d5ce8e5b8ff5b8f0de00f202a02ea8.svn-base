@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.github.zhouzhuo810:OkUSB-1.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/OkUSB-1.0.0.aar/c7439dbb4d9598f7bbba1c7e92fabd82/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/OkUSB-1.0.0.aar/c7439dbb4d9598f7bbba1c7e92fabd82/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
