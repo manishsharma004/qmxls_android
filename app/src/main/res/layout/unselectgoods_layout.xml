@@ -19,7 +19,7 @@
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="整单取消"
+            android:text="Cancellation"
             android:layout_marginLeft="12dp"
             android:textSize="22sp"
             android:textColor="#000"
@@ -28,7 +28,7 @@
     </LinearLayout>
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        app:title="整单取消"
+        app:title="Cancellation"
         android:visibility="gone"
         app:titleTextAppearance="@style/ToolBarSize"
         android:layout_height="wrap_content">
@@ -47,7 +47,7 @@
         <TextView
 
             android:id="@+id/tv_info1"
-            android:text="取消结账订单"
+            android:text="Cancel the checkout order"
             android:textSize="18sp"
             android:textColor="#000"
             android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
         <TextView
 
             android:layout_marginTop="10dp"
-            android:text="将同时清空商品,优惠券，导购等所有信息"
+            android:text="All information such as merchandise, coupons, shopping guides, etc. will be cleared at the same time."
             android:textSize="18sp"
             android:textColor="#000"
             android:layout_width="wrap_content"
@@ -73,7 +73,7 @@
 
             <TextView
                 android:id="@+id/tv_not_cancel"
-                android:text="不取消"
+                android:text="Not canceled"
                 android:paddingLeft="40dp"
                 android:paddingRight="40dp"
                 android:paddingTop="10dp"
@@ -89,7 +89,7 @@
             <TextView
                 android:id="@+id/tv_sure_cancel"
                 android:textColor="#fff"
-                android:text="确定取消"
+                android:text="confirm cancellation"
                 android:textSize="18sp"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"

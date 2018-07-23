@@ -14,7 +14,7 @@
     android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/tv_store_name"
-        android:text="企迈零售官方"
+        android:text="Enterprise Mai retail official"
         android:layout_gravity="center"
         android:textSize="25sp"
         android:layout_marginLeft="20dp"

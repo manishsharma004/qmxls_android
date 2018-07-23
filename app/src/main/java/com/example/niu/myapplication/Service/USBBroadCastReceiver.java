@@ -24,10 +24,10 @@ public class USBBroadCastReceiver extends BroadcastReceiver {
         String action = intent.getAction();
 
         if (action.equals(Intent.ACTION_MEDIA_EJECT)) {
-            Hint.Short(mContext,"已断开");
+            Hint.Short(mContext,"Disconnected");
             //USB设备移除，更新UI
         } else if (action.equals(Intent.ACTION_MEDIA_MOUNTED)) {
-            Hint.Short(mContext,"；已连接");
+            Hint.Short(mContext,";connected");
             //USB设备挂载，更新UI
         }
     }

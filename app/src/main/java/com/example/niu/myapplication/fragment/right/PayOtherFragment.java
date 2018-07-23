@@ -99,18 +99,18 @@ public class PayOtherFragment extends BaseFragment {
 
                     //Toast.makeText(activity,"请先选择一个标记",Toast.LENGTH_SHORT).show();
 
-                    ToastUtils.showShortToast("请先选择一个标记");
+                    ToastUtils.showShortToast("Please select a tag first");
                     return;
                 }
 
                 //  确认标记....
                 MessageEvent  messageEvent = new MessageEvent("BiaojiPay");
                 if (selected==1){
-                    messageEvent.setIsPay("微信");
+                    messageEvent.setIsPay("WeChat");
                 }  if (selected==2){
-                    messageEvent.setIsPay("支付宝");
+                    messageEvent.setIsPay("Alipay");
                 }  if (selected==3){
-                    messageEvent.setIsPay("POS机");
+                    messageEvent.setIsPay("POS machine");
                 }
                 EventBus.getDefault().postSticky(messageEvent);
 

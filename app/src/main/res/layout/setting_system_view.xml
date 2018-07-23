@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="系统设置"
+        android:text="System settings"
         android:textColor="#000"
         android:textSize="18sp"
 
@@ -36,7 +36,7 @@ android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
         android:textSize="18sp"
 
-        android:text="店铺名称: "
+        android:text="Store Name: "
         />
     
     <TextView
@@ -44,7 +44,7 @@ android:layout_marginTop="20dp"
         android:textSize="18sp"
         android:textColor="#000"
         android:id="@+id/store_name"
-        android:text="企迈零售"
+        android:text="Qimai Retail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 <LinearLayout
@@ -54,7 +54,7 @@ android:layout_marginTop="20dp"
     android:layout_marginRight="20dp"
     android:layout_height="wrap_content">
     <TextView
-        android:text="切换店铺"
+        android:text="Switch shop"
         android:textSize="18sp"
         android:gravity="center"
         android:id="@+id/change_store"
@@ -85,7 +85,7 @@ android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:textSize="18sp"
 
-            android:text="联系客户: "
+            android:text="contact clients: "
             />
 
 
@@ -121,7 +121,7 @@ android:layout_marginTop="20dp"
 
         android:background="#609ee9"
         android:textColor="#fff"
-        android:text="退出"
+        android:text="drop out"
         />
 
 </LinearLayout>

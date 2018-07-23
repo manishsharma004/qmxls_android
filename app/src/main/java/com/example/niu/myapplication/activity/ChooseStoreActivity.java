@@ -131,7 +131,7 @@ ChooseStoreActivity extends AppCompatActivity implements View.OnClickListener{
                     }else {
                         Hint.Short(ChooseStoreActivity.this,message+">>>"+code);
                    if (code.equals("9001")){
-                       Hint.Short(ChooseStoreActivity.this,"登录超时");
+                       Hint.Short(ChooseStoreActivity.this,"Login timeout");
                    }
                     }
                     startActivity(new Intent(ChooseStoreActivity.this,MainActivity.class));

@@ -24,7 +24,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="立即登录"
+        android:text="log in immediately"
         android:layout_gravity="center"
         android:textColor="#000"
         android:textSize="20sp"
@@ -42,14 +42,14 @@
          <TextView
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:text="手机号码"
+             android:text="cellphone number"
              />
 
 
          <EditText
             android:layout_marginLeft="15dp"
             android:id="@+id/et_login_mobile"
-            android:hint="请输入手机号码"
+            android:hint="Please enter the phone number"
             android:text="13516492591"
              android:inputType="number"
              android:focusable="true"
@@ -73,14 +73,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="密码"
+            android:text="password"
             android:layout_gravity="left"
             android:inputType="number"
             />
         <EditText
             android:id="@+id/et_login_pwd"
             style="@style/MyEditText"
-            android:hint="请输入密码"
+            android:hint="Please enter your password"
             android:text="123123"
 
             android:focusable="true"
@@ -99,7 +99,7 @@
         android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="登录"
+        android:text="log in"
         android:id="@+id/bt_login"
         android:background="#FFD101"
         android:paddingLeft="170dp"
@@ -113,13 +113,13 @@
 
         <TextView
             android:id="@+id/tv_login_no_account"
-            android:text="还没有账号,"
+            android:text="No account yet,"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/tv_login_go_register"
-            android:text="立即注册"
+            android:text="Sign up now"
             android:textColor="#FAC000"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/tv_login_no_account"
@@ -130,7 +130,7 @@
         android:id="@+id/tv_login_forget_pwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="忘记密码?"
+        android:text="forget password?"
 
         android:layout_marginLeft="300dp"
         />
@@ -142,7 +142,7 @@
     android:layout_marginTop="50dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:text="键盘区"
+    android:text="Keyboard area"
     android:visibility="gone"
     android:background="#f2f2f2"
     android:gravity="center"

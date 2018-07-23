@@ -18,7 +18,7 @@
 
         <TextView
             android:id="@+id/tv_store_name"
-            android:text="企迈零售官方"
+            android:text="Enterprise Mai retail official"
             android:layout_gravity="start|center"
             android:textSize="20sp"
             android:textColor="@color/TvBlack"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/tv_store_type"
-            android:text="门店"
+            android:text="Store"
             android:layout_gravity="start|center"
             android:textSize="16sp"
             android:background="@drawable/selector_blue"
@@ -47,7 +47,7 @@
 
 
             <TextView
-                android:text="店铺状态："
+                android:text="Store status："
                 android:layout_gravity="start|center"
                 android:textSize="16sp"
                 android:textColor="@color/TvGray"
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
-                android:text="营业中"
+                android:text="in operation"
                 android:id="@+id/store_status"
                 android:textSize="16sp"
                 android:textColor="@color/TvGray"

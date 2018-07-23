@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginTop="-5dp"
-            android:text="结账清单"
+            android:text="Checkout list"
             android:textSize="23sp" />
 
     </RelativeLayout>
@@ -65,7 +65,7 @@
                     android:id="@+id/youhuimoney"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="优惠5元"
+                    android:text="Offer 5 yuan"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="10dp"
                     android:textSize="14sp" />
@@ -85,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="应收金额"
+                    android:text="Receivable amount"
                     android:textColor="#000"
                     android:textSize="16sp" />
 
@@ -111,7 +111,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="本次优惠"
+                    android:text="This offer"
                     android:textColor="#000"
                     android:textSize="16sp" />
 
@@ -160,7 +160,7 @@
                     android:layout_marginLeft="30dp"
 
                     android:textColor="#609ee7"
-                    android:text="整单取消"
+                    android:text="Cancellation"
                     />
 
                 <TextView
@@ -169,7 +169,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="30dp"
-                    android:text="收款"
+                    android:text="Receipt"
 
                     android:enabled="false"
                     android:textColor="#fff"
@@ -210,7 +210,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="未添加任何商品" />
+                    android:text="No items added" />
             </LinearLayout>
 
             <android.support.v7.widget.RecyclerView

@@ -56,12 +56,12 @@ public class CouponsRecyclerAdapter extends RecyclerView.Adapter<CouponsRecycler
 
         holder.tv_validity_period.setText(CouponsEntryArrayList.get(position).getType_id());
         if (CouponsEntryArrayList.get(position).getCoupon_type().equals("0")){
-        holder.tv_coupons_style.setText("面值券");
+        holder.tv_coupons_style.setText("Denomination voucher");
             holder.tv_cheap_money.setText(CouponsEntryArrayList.get(position).getAmount());
-            holder.tv_unit.setText("元");
+            holder.tv_unit.setText("yuan");
         }else {
-            holder.tv_coupons_style.setText("折扣券");
-            holder.tv_unit.setText("折");
+            holder.tv_coupons_style.setText("Discount coupon");
+            holder.tv_unit.setText("fold");
         }
 
 

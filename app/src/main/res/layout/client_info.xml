@@ -20,7 +20,7 @@
         <TextView
             android:id="@+id/tv_client_name"
             android:layout_width="wrap_content"
-            android:text="七仔"
+            android:text="Seven aberdeen"
             android:textColor="#000"
             android:textSize="18sp"
             android:layout_height="wrap_content" />
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="更换"
+            android:text="replace"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:paddingLeft="20dp"
@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="消费次数:   "
+            android:text="Consumption times:   "
             />
 
         <TextView
@@ -72,7 +72,7 @@
             android:layout_marginLeft="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="最后消费时间:   "
+            android:text="Last consumption time:   "
             />
         <TextView
             android:layout_marginLeft="5dp"
@@ -96,7 +96,7 @@
 
         <TextView
         android:layout_marginLeft="20dp"
-            android:text="会员卡"
+            android:text="membership card"
             android:textColor="#000"
             android:textSize="18sp"
             android:layout_width="wrap_content"
@@ -115,7 +115,7 @@
             <TextView
 
                 android:id="@+id/tv_vip_style"
-                android:text="白银卡"
+                android:text="Silver card"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
@@ -124,7 +124,7 @@
 
             <TextView
                 android:id="@+id/tv_validity_period"
-                android:text="永久有效"
+                android:text="Permanent"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="10dp"
@@ -150,7 +150,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignRight="@id/tv_discount"
-                    android:text="折"
+                    android:text="fold"
                     android:layout_marginLeft="5dp"
 
                     />
@@ -184,7 +184,7 @@
 
         <TextView
             android:layout_marginLeft="20dp"
-            android:text="优惠券"
+            android:text="coupon"
             android:textSize="18sp"
             android:textColor="#000"
             android:layout_width="wrap_content"

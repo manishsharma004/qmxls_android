@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="收款方式"
+        android:text="payment method"
         android:textColor="#000"
         android:paddingBottom="10dp"
         android:textSize="22sp"
@@ -48,7 +48,7 @@
             >
 
             <TextView
-                android:text="现金"
+                android:text="cash"
                 android:textSize="18sp"
                 android:textColor="#000"
 
@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
-                android:text="管理现金账户"
+                android:text="Manage cash accounts"
                 />
 
         </LinearLayout>
@@ -91,7 +91,7 @@
             >
 
             <TextView
-                android:text="微信"
+                android:text="WeChat"
                 android:textSize="18sp"
                 android:textColor="#000"
 
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
-                android:text="收银费率以论坛公告为准"
+                android:text="The cashier rate is subject to the forum announcement"
                 />
 
         </LinearLayout>
@@ -135,7 +135,7 @@
             >
 
             <TextView
-                android:text="支付宝"
+                android:text="Alipay"
                 android:textSize="18sp"
                 android:textColor="#000"
 
@@ -147,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
-                android:text="收银费率以论坛公告为准"
+                android:text="The cashier rate is subject to the forum announcement"
                 />
 
         </LinearLayout>
@@ -177,7 +177,7 @@
             >
 
             <TextView
-                android:text="其他收款"
+                android:text="Other receipts"
                 android:textSize="18sp"
                 android:textColor="#000"
 
@@ -189,7 +189,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
-                android:text="标记收款"
+                android:text="Marking receipts"
                 />
 
         </LinearLayout>

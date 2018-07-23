@@ -8,7 +8,7 @@
     android:id="@+id/tl_choose_count"
     android:layout_width="match_parent"
     app:navigationIcon="@drawable/ic_action_back"
-    app:title="输入商品数量"
+    app:title="Enter the number of items"
     android:layout_height="wrap_content">
 
 

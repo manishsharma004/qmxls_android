@@ -51,7 +51,7 @@
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
                     android:background="@drawable/shape_bt_bg"
-                    android:text="挂单"
+                    android:text="Pending order"
                     />
 
 
@@ -80,7 +80,7 @@
                     android:textSize="18sp"
 
                     android:background="@drawable/shape_bt_bg"
-                    android:text="取单"
+                    android:text="Take order"
                     android:paddingTop="10dp"
                     />
 
@@ -132,13 +132,13 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ti_goods"
                 android:layout_gravity="left"
-                android:text="商品" />
+                android:text="Product" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/ti_client"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="客户" />
+                android:text="client" />
         </android.support.design.widget.TabLayout>
         <View
             android:layout_alignBottom="@id/tl_goods_client"

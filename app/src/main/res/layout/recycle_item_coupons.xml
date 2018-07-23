@@ -12,7 +12,7 @@
 
     <TextView
         android:id="@+id/tv_coupons_style"
-        android:text="面值券"
+        android:text="Denomination voucher"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/tv_info"
-        android:text="有效期:  "
+        android:text="Validity period:  "
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="10dp"

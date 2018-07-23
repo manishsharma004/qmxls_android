@@ -139,7 +139,7 @@ public class CrashFragment extends BaseFragment {
             case R.id.tv_key_point:
                 if (inputContent.toString().length() == 0) {
                     //Toast.makeText(activity,"请输入正确的金额",Toast.LENGTH_SHORT).show();
-                    ToastUtils.showShortToast("请输入正确的金额");
+                    ToastUtils.showShortToast("Please enter the correct amount");
                 } else {
 
                     if (!isIndexOfMaxRequest(inputContent.toString())) {
@@ -176,7 +176,7 @@ public class CrashFragment extends BaseFragment {
                    tvClientPay.setText("0");
                    tvCharge.setText("0.00");
                }else {
-                   Hint.Short(getActivity(),"实收金额大于应收金额！");
+                   Hint.Short(getActivity(),"The paid amount is greater than the receivable amount!");
                }
 
                 break;

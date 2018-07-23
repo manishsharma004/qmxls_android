@@ -32,7 +32,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="应收金额: "
+                    android:text="Receivable amount: "
                     android:textSize="18sp"
 
                     />
@@ -58,7 +58,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="实收金额: "
+                    android:text="Paid amount: "
                     android:textSize="18sp"
                     android:textColor="#000"
 
@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#000"
                 android:textSize="18sp"
-                android:text="找零: "
+                android:text="Change: "
                 />
 
 
@@ -127,7 +127,7 @@
     <TextView
 
         android:id="@+id/tv_cancel"
-        android:text="取消收款"
+        android:text="Cancel payment"
         android:textSize="18sp"
         android:textColor="#609ee9"
         android:background="@drawable/shape_bt_bg"

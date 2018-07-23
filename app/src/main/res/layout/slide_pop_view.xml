@@ -11,7 +11,7 @@
     <TextView
         android:layout_marginTop="30dp"
         android:id="@+id/tv_slide_crashier"
-        android:text="收银"
+        android:text="Cash register"
         android:textSize="18sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -23,7 +23,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:id="@+id/tv_slide_setting"
-    android:text="设置"
+    android:text="Setting"
     />
 
 </com.example.niu.myapplication.view.SlideLiearLayout>

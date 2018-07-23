@@ -6,7 +6,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/tl_choose_stores"
         android:layout_width="match_parent"
-        app:title="返回登录"
+        app:title="Return login"
         app:navigationIcon="@drawable/ic_action_back"
         android:layout_height="?attr/actionBarSize">
     </android.support.v7.widget.Toolbar>
@@ -23,7 +23,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="选择店铺"
+        android:text="Choose a store"
         android:layout_gravity="center_horizontal"
         android:textColor="#000"
         android:textSize="22sp"

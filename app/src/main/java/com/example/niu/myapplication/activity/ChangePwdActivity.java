@@ -77,15 +77,15 @@ public class ChangePwdActivity extends BaseActivity {
             case R.id.bt_change_pwd:
 //                finish();
                 if (TextUtils.isEmpty(etChangeMobile.getText().toString())){
-                    Hint.Short(ChangePwdActivity.this,"手机号不能为空！");
+                    Hint.Short(ChangePwdActivity.this,"The phone number cannot be empty!");
                     return;
                 }
                 if (TextUtils.isEmpty(etChangeYzm.getText().toString())){
-                Hint.Short(ChangePwdActivity.this,"验证码不能为空！");
+                Hint.Short(ChangePwdActivity.this,"verification code must be filled!");
                 return;
             }
             if (TextUtils.isEmpty(etChangePwd.getText().toString())){
-                Hint.Short(ChangePwdActivity.this,"密码不能为空！");
+                Hint.Short(ChangePwdActivity.this,"password can not be blank!");
                 return;
             }
                 sendPwd(etChangeMobile.getText().toString(),etChangePwd.getText().toString(),etChangeYzm.getText().toString());
@@ -93,7 +93,7 @@ public class ChangePwdActivity extends BaseActivity {
                 break; case R.id.bt_get_yzm:
 //                finish();
                 if (TextUtils.isEmpty(etChangeMobile.getText().toString())){
-                    Hint.Short(ChangePwdActivity.this,"手机号不能为空！");
+                    Hint.Short(ChangePwdActivity.this,"The phone number cannot be empty!");
                     return;
                 }
                 sendCode();
@@ -115,7 +115,7 @@ public class ChangePwdActivity extends BaseActivity {
                     String message = mjsonObjects.getString("message");
                     if (result.equals("true")) {
                         JSONObject mjsonObject =mjsonObjects.getJSONObject("data");
-                        Hint.Short(ChangePwdActivity.this,"短信已发送，请注意查收");
+                        Hint.Short(ChangePwdActivity.this,"SMS has been sent, please check");
                         timeCount.start();
 //                        Hint.Short(ReisterActivity.this,mjsonObject.getString("expiredAt"));
                     }else {
@@ -189,13 +189,13 @@ public class ChangePwdActivity extends BaseActivity {
         @Override
         public void onTick(long millisUntilFinished) {
             btn_count.setEnabled(false);
-            btn_count.setText(millisUntilFinished / 1000 + "秒");
+            btn_count.setText(millisUntilFinished / 1000 + "second");
         }
 
         @Override
         public void onFinish() {
             btn_count.setEnabled(true);
-            btn_count.setText("重新发送");
+            btn_count.setText("Resend");
 
         }
 

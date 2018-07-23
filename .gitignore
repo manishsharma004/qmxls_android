@@ -7,3 +7,10 @@
 /build
 /captures
 .externalNativeBuild
+
+.idea/
+.project/
+.settings/
+app/.classpath
+app/.project
+.project

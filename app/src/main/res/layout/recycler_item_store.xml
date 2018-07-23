@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginLeft="20dp"
-        android:text="企迈云商零售"
+        android:text="Enterprise Maiyun Retail"
         android:gravity="center"
         android:textColor="#000"
         android:textSize="18sp" />

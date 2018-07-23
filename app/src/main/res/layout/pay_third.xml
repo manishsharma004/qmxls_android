@@ -19,7 +19,7 @@
         android:id="@+id/tv_introduction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="使用扫码枪扫描客户付款码"
+        android:text="Scan customer payment code using a scan code gun"
         android:layout_marginTop="20dp"
         android:textSize="16sp"
         android:layout_marginRight="20dp"
@@ -29,7 +29,7 @@
 
     <TextView
         android:id="@+id/tv_cancel"
-        android:text="取消收款"
+        android:text="Cancel payment"
         android:textSize="16sp"
         android:textColor="#609ee9"
         android:background="@drawable/shape_bt_bg"

@@ -70,20 +70,20 @@ public class ReisterActivity extends BaseActivity implements View.OnClickListene
 
 //
         if (TextUtils.isEmpty(etRegistermobile.getText().toString())){
-            Hint.Short(ReisterActivity.this,"手机号不能为空！");
+            Hint.Short(ReisterActivity.this,"The phone number cannot be empty!");
             return;
         } if (TextUtils.isEmpty(etRegisteryzm.getText().toString())){
-            Hint.Short(ReisterActivity.this,"验证码不能为空！");
+            Hint.Short(ReisterActivity.this,"verification code must be filled!");
             return;
         }if (TextUtils.isEmpty(etRegisterpwd.getText().toString())){
-            Hint.Short(ReisterActivity.this,"密码不能为空！");
+            Hint.Short(ReisterActivity.this,"password can not be blank!");
             return;
         }
         sendRegister(etRegistermobile.getText().toString(),etRegisterpwd.getText().toString(),etRegisteryzm.getText().toString());
                     break;
                 case R.id.bt_get_yzm:
                  if (TextUtils.isEmpty(etRegistermobile.getText().toString())){
-                            Hint.Short(ReisterActivity.this,"手机号不能为空！");
+                            Hint.Short(ReisterActivity.this,"The phone number cannot be empty!");
                             return;
                         }
                     sendCode();
@@ -158,7 +158,7 @@ public class ReisterActivity extends BaseActivity implements View.OnClickListene
                     String message = mjsonObjects.getString("message");
                     if (result.equals("true")) {
                         JSONObject mjsonObject =mjsonObjects.getJSONObject("data");
-                        Hint.Short(ReisterActivity.this,"短信已发送，请注意查收");
+                        Hint.Short(ReisterActivity.this,"SMS has been sent, please check");
                         timeCount.start();
 //                        Hint.Short(ReisterActivity.this,mjsonObject.getString("expiredAt"));
                     }else {
@@ -196,13 +196,13 @@ public class ReisterActivity extends BaseActivity implements View.OnClickListene
         @Override
         public void onTick(long millisUntilFinished) {
             btn_count.setEnabled(false);
-            btn_count.setText(millisUntilFinished / 1000 + "秒");
+            btn_count.setText(millisUntilFinished / 1000 + "second");
         }
 
         @Override
         public void onFinish() {
             btn_count.setEnabled(true);
-            btn_count.setText("重新发送");
+            btn_count.setText("Resend");
 
         }
 

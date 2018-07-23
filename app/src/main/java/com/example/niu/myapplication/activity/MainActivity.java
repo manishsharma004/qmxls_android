@@ -630,7 +630,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
                     /*Toast.makeText(this,"请先完成当前操作",Toast.LENGTH_SHORT)
                             .show();*/
-            ToastUtils.showShortToast("请先完成当前操作");
+            ToastUtils.showShortToast("Please complete the current operation first.");
         }
 
 

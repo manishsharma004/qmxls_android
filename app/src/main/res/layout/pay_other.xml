@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="如果你已使用以下方式向消费者收款"
+            android:text="If you have used the following methods to collect money from consumers"
 
             android:textColor="#000"
             android:textSize="16sp" />
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="你可以选择对应的标记收款"
+            android:text="You can choose the corresponding tag to receive the payment."
             android:textColor="#000"
             android:textSize="16sp" />
 
@@ -59,7 +59,7 @@
                     android:src="@drawable/pay_wechat_uncheck" />
                 <TextView
                     android:layout_marginTop="20dp"
-                    android:text="标记收款 自有微信"
+                    android:text="Mark collection, self-owned WeChat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -81,7 +81,7 @@
                     android:src="@drawable/pay_zhifubao_uncheck" />
                 <TextView
                     android:layout_marginTop="20dp"
-                    android:text="标记收款 自有支付宝"
+                    android:text="Mark collection, own payment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -101,7 +101,7 @@
                     android:src="@drawable/pay_pos_unchecked" />
                 <TextView
 
-                    android:text="标记收款 POS刷卡"
+                    android:text="Mark collection POS card"
                     android:layout_marginTop="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -126,7 +126,7 @@
                 android:id="@+id/tv_sure_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="确认标记收款"
+                android:text="Confirmation mark collection"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
                 android:paddingTop="15dp"
@@ -140,7 +140,7 @@
                 android:paddingBottom="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="取消收款"
+                android:text="Cancel payment"
                 android:layout_marginLeft="30dp"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"

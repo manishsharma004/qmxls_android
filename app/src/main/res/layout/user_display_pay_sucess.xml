@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="收款成功 欢迎下次光临"
+            android:text="Successful collection, welcome to the next visit"
             android:textSize="30sp" />
 
     </LinearLayout>
@@ -31,7 +31,7 @@
             android:layout_marginLeft="20dp"
             android:paddingBottom="25dp"
             android:paddingTop="25dp"
-            android:text="企小店欢迎你"
+            android:text="Welcome to the small shop"
             android:textColor="@color/colorPrimary"
             android:textSize="30sp" />
 
@@ -60,7 +60,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="应收金额"
+                    android:text="Receivable amount"
                     android:textSize="18sp" />
 
                 <LinearLayout
@@ -99,7 +99,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="实付金额"
+                    android:text="The amount actually paid"
                     android:textSize="18sp" />
 
                 <LinearLayout
@@ -138,7 +138,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="找零金额"
+                    android:text="Change amount"
                     android:textColor="#000"
                     android:textSize="22sp" />
 
@@ -193,7 +193,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="支付成功"
+                android:text="payment successful"
                 android:textSize="22sp"
                 />
 

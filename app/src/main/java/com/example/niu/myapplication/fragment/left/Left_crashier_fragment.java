@@ -179,7 +179,7 @@ public class Left_crashier_fragment extends BaseFragment implements GoodsSelectA
         public void onDisConnect() {
             Message message = new Message();
             message.what = 1;
-            message.obj = "与远程服务连接中断";
+            message.obj = "Interrupted connection to remote service";
             myHandler.sendMessage(message);
         }
 
@@ -189,13 +189,13 @@ public class Left_crashier_fragment extends BaseFragment implements GoodsSelectA
             message.what = 1;
             switch (state) {
                 case AIDL_CONN:
-                    message.obj = "与远程服务绑定成功";
+                    message.obj = "Successfully bound to the remote service";
                     break;
                 case VICE_SERVICE_CONN:
-                    message.obj = "与副屏服务通讯正常";
+                    message.obj = "Normal communication with the secondary screen service";
                     break;
                 case VICE_APP_CONN:
-                    message.obj = "与副屏app通讯正常";
+                    message.obj = "Communicate normally with the secondary screen app";
                     break;
                 default:
                     break;
@@ -905,7 +905,7 @@ public class Left_crashier_fragment extends BaseFragment implements GoodsSelectA
             /*Toast.makeText(activity, "请先完成当前操作", Toast.LENGTH_SHORT)
                     .show();*/
 
-            ToastUtils.showShortToast("请先完成当前操作");
+            ToastUtils.showShortToast("Please complete the current operation first.");
             return;
         }
 
@@ -1010,10 +1010,10 @@ public class Left_crashier_fragment extends BaseFragment implements GoodsSelectA
                     sendPay(messageEvent.getAuthCode());
                     dialog.setLoadingBuilder(Z_TYPE.STAR_LOADING)//设置类型
                             .setLoadingColor(Color.BLACK)//颜色
-                            .setHintText("支付中，请稍后...")
+                            .setHintText("In the payment, please wait...")
                             .show();
                 }else {
-                    Toast.makeText(getActivity(), "请正确扫码支付！ ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Please scan the code correctly! ", Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -1084,7 +1084,7 @@ public class Left_crashier_fragment extends BaseFragment implements GoodsSelectA
                 }
                else {
 
-                    Toast.makeText(getActivity(), "未搜索到该商品信息！ ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "The product information was not found! ", Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -1116,7 +1116,7 @@ public class Left_crashier_fragment extends BaseFragment implements GoodsSelectA
 //                    Log.i(TAG, CNY);
                         Double min_ = Double.parseDouble(min_amount); //6.20
                         if (min_<=cny2){
-                            Hint.Short(getActivity(),"该优惠券不满足使用条件");
+                            Hint.Short(getActivity(),"The coupon does not meet the conditions of use");
                             return;
                         }
                         String CNY3 = df.format(Double.parseDouble(messageEvent.getCheap_money())); //6.20   这个是字符串，但已经是我要的两位小数了
@@ -1125,7 +1125,7 @@ public class Left_crashier_fragment extends BaseFragment implements GoodsSelectA
                         Double TotalDiscount = cny3+cny2;
                         rlYouhuiquan.setVisibility(View.VISIBLE);
                         tvTotalDiscount.setText("" +TotalDiscount );
-                        youhuimoney.setText("优惠" + messageEvent.getCheap_money() + "元");
+                        youhuimoney.setText("Offer" + messageEvent.getCheap_money() + "元");
                     }else if (messageEvent.getYouhuitype().equals("2"))  {
                         Double cny = Double.parseDouble(tvTotalDiscount.getText().toString());//6.2041    这个是转为double类型
                         DecimalFormat df = new DecimalFormat("0.00");
@@ -1146,7 +1146,7 @@ public class Left_crashier_fragment extends BaseFragment implements GoodsSelectA
 //                    Log.i(TAG, CNY);
                         Double cny3 = Double.parseDouble(CNY3); //6.20
                         Double TotalDiscount = (1-cny3*0.1)*bbb;
-                        youhuimoney.setText("折扣" + messageEvent.getCheap_money() + "折");
+                        youhuimoney.setText("discount" + messageEvent.getCheap_money() + "折");
                         tvTotalDiscount.setText("" +TotalDiscount);
                     }
                 }catch (Exception e){
@@ -1469,12 +1469,12 @@ public class Left_crashier_fragment extends BaseFragment implements GoodsSelectA
         final JSONObject data = new JSONObject();
         try {
 
-            data.put("title", "企小店欢迎您");
+            data.put("title", "Welcome to the small shop");
             JSONObject head = new JSONObject();
-            head.put("param1", "商品名");
-            head.put("param2", "单价");
-            head.put("param3", "数量");
-            head.put("param4", "金额");
+            head.put("param1", "Product name");
+            head.put("param2", "unit price");
+            head.put("param3", "Quantity");
+            head.put("param4", "Amount");
             data.put("head", head);
             data.put("alternateTime", 1000);
             JSONArray list = new JSONArray();
@@ -1490,16 +1490,16 @@ public class Left_crashier_fragment extends BaseFragment implements GoodsSelectA
             data.put("list", list);
             JSONArray KVPList = new JSONArray();
             JSONObject KVPListOne = new JSONObject();
-            KVPListOne.put("name", "应收金额 ");
+            KVPListOne.put("name", "Receivable amount ");
             KVPListOne.put("value", "132.00\n");
             JSONObject KVPListTwo = new JSONObject();
-            KVPListTwo.put("name", "优惠 ");
+            KVPListTwo.put("name", "Offer ");
             KVPListTwo.put("value", "12.00");
             JSONObject KVPListThree = new JSONObject();
-            KVPListThree.put("name", "会员折扣 ");
+            KVPListThree.put("name", "member discount ");
             KVPListThree.put("value", "10");
             JSONObject KVPListFour = new JSONObject();
-            KVPListFour.put("name", "应收金额 ");
+            KVPListFour.put("name", "Receivable amount ");
             KVPListFour.put("value", "120.00");
             KVPList.put(0, KVPListOne);
             KVPList.put(1, KVPListTwo);
